@@ -35,5 +35,19 @@ let questionValues = [100, 200, 300, 400, 500];
  *      Need more help? Check out https://bit.ly/2EIsD3b or ask a volunteer.
  */
 function renderQuestions() {
-    // Add code here
+   for(let i= 0; i < categories.length; i++ ){
+     let questionHtml = "<div class= 'questions-column' >";
+     for (let question of questionValues) {
+       questionHtml=
+         questionHtml +
+         "<div class = 'question-cell' data- category = '" +
+         i + 
+         "'>" +
+         "$" +
+         question +
+         "</div>";
+    }
+    questionHtml += "</div>";
+    $("#questions").append(questionHtml);
+    }
 }
