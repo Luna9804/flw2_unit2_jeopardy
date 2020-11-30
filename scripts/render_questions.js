@@ -40,7 +40,7 @@ function renderQuestions() {
      for (let question of questionValues) {
        questionHtml=
          questionHtml +
-         "<div class = 'question-cell' data- category = '" +
+         "<div class = 'question-cell' data-category = '" +
          i + 
          "'>" +
          "$" +
