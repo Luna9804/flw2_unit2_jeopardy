@@ -17,6 +17,10 @@
 
 function renderScoringButtons() {
     // Add code here
+    $('#score').show();
+    //$('#correct-button').click(() => {
+        // Add code here
+       // questionOnClick(categoryIndex, moneyValue);
 }
 
 /* TODO: Program the following:
