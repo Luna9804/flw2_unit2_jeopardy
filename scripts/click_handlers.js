@@ -42,7 +42,6 @@ function attachClickHandlers() {
     $(questionElement).click(() => {
       // Add code here
       questionOnClick(categoryIndex, moneyValue);
-
     });
   });
 }
@@ -70,7 +69,6 @@ function questionOnClick(categoryIndex, moneyValue) {
   $("#question-modal-close").click(() => {
     // Add code here
     hideQuestionPopup();
-  
   });
   $("#question-modal").modal("show");
 }

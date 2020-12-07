@@ -18,11 +18,18 @@
 function renderScoringButtons() {
     // Add code here
     $('#score').show();
-    //$('#correct-button').click(() => {
-        // Add code here
-       // questionOnClick(categoryIndex, moneyValue);
+
+   $('#question-modal-show-answer').click(() => {
+       $('#question-modal-actions').hide();
+
+       $('#scoring-actions').show();
+    })
+
 }
 
+$('#correct-button').click(() => {
+    $(getCurrentScore).add();
+}
 /* TODO: Program the following:
  *  Update the score.
  *
@@ -43,6 +50,7 @@ function renderScoringButtons() {
 */
 function subtractFromScore() {
     // Add code here
+    //getCurrentScore()
 }
 
 function addToScore() {
